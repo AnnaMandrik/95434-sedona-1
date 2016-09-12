@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Sedona</title>
+</head>
+<body>
+<header class="page-header container">
+  <div class="page-header__logo"></div>
+  <nav class="main-nav main-nav--opened main-nav--closed">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+        <li class="main-nav__item main-nav__item--active"><a>Форма отзыва</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML academy</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="container">
+  <div class="intro">
+    <p class="intro__text">Оставьте свой отзыв</p>
+    <p class="intro__reasons">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      достопримечательностях</p>
+  </div>
+  <form class="form">
+    <div class="form__wrapper">
+      <div class="form__name">
+        <div class="form__title">
+          <p>Представьтесь, пожалуйста:</p>
+        </div>
+        <div class="form__name-wrapper">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Петр">
+        </div>
+        <div class="form__name-wrapper">
+          <label for="surname">Фамилия</label>
+          <input type="text" id="surname" name="surname" placeholder="Иванов">
+        </div>
+        <div class="form__name-wrapper">
+          <label for="second-name">Отчество</label>
+          <input type="text" id="second-name" name="second-name" placeholder="Александрович">
+        </div>
+      </div>
+    </div>
+    <div class="form-wrapper">
+      <div class="form__contacts">
+        <div class="form__title">
+          <p>Контактная информация:</p>
+        </div>
+        <div class="form__w">
+          <div class="form__contacts-wrapper">
+            <label for="phone">Контактный телефон:</label>
+            <div class="form__input">
+              <input type="text" id="phone" name="phone" placeholder="Введите телефон">
+            </div>
+          </div>
+          <div class="form__text-error">
+            <span>Ошибка, перепроверьте номер</span>
+          </div>
+          <div class="form__contacts-wrapper">
+            <label for="email">Электронная почта:</label>
+            <div class="form__input">
+              <input type="email" id="email" name="email" placeholder="Введите e-mail">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form__wrapper">
+      <div class="form__feeling">
+        <div class="form__title">
+          <p>Ваше общее впечатление:</p>
+        </div>
+        <div class="form__feeling-wrapper">
+          <label for="yes">
+            <input type="radio" name="choice" id="yes" value="yes" checked> Скорее положительное
+          </label>
+        </div>
+        <div class="form__feeling-wrapper">
+          <label for="no">
+            <input type="radio" name="choice" id="no" value="no"> Скорее отрицательное
+          </label>
+        </div>
+        <div class="form__feeling-wrapper">
+          <label for="maybe">
+            <input type="radio" name="choice" id="maybe" value="maybe"> Затрудняюсь ответить
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-wrapper">
+      <div class="form__places">
+        <div class="form__title">
+          <p>Посещенные достопримечательности:</p>
+        </div>
+        <div class="form__wrapper-place">
+          <div class="form__places-wrapper">
+            <label for="bridge">
+              <input type="checkbox" name="bridge" id="bridge" checked> Мост дьявола
+            </label>
+          </div>
+          <div class="form__places-wrapper">
+            <label for="park">
+              <input type="checkbox" name="park" id="park" checked> Слайд-парк
+            </label>
+          </div>
+          <div class="form__places-wrapper">
+            <label for="bell">
+              <input type="checkbox" name="bell" id="bell"> Гора-колокол
+            </label>
+          </div>
+          <div class="form__places-wrapper">
+            <label for="red">
+              <input type="checkbox" name="red" id="red" checked> Красные скалы
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form__wrapper">
+      <div class="form__emotion">
+        <div class="form__title">
+          <p>Опишите свои эмоции</p>
+        </div>
+        <div class="form__emotion-wrapper">
+          <textarea id="text" name="text" rows="10" cols="50">Опишите подробно все свои восторги
+          </textarea>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Отправить отзыв">
+        </div>
+      </div>
+    </div>
+  </form>
+</main>
+<footer class="page-footer container">
+  <a class="laib" href="#">#visitsedona</a>
+  <div class="social">
+    <div class="social__link social__link--tw"><img src="http://placehold.it/15x10"></div>
+    <div class="social__link social__link--fb"><img src="http://placehold.it/15x10"></div>
+    <div class="social__link social__link--yt"><img src="http://placehold.it/15x10"></div>
+  </div>
+  <section class="footer-info">
+    Разработано
+    <img src="http://placehold.it/15x10">
+  </section>
+</footer>
+</body>
+</html>
