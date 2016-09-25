@@ -1,0 +1,45 @@
+.info__block{
+  background-color: @grey;
+}
+.info__name{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @black;
+  padding: 10px;
+}
+.info__text{
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: @black;
+  padding: 10px;
+}
+.info__number{
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: @black;
+
+}
+@media @tablet-widths {
+  .info {
+  /*  .clearfix();*/
+       display: flex;
+    justify-content: space-between;
+  }
+    .info__block {
+        min-width: 256px;
+    }
+}
+@media @desktop-widths {
+    .info__block {
+        min-width: 400px;
+    }
+}
