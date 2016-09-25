@@ -1,0 +1,36 @@
+.foto {
+    margin-left: 10px;
+}
+.photo-post {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@media @tablet-widths {
+    .foto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+  .photo-post {
+      min-width: 324px;
+     
+}
+   div .photo-post:first-child {
+   min-width: 648px;
+  }
+
+}
+
+@media @desktop-widths {
+  
+  .photo-post {
+    min-width: 400px;
+}
+  div .photo-post:first-child {
+    min-width: 1200px;
+  }
+
+  }
