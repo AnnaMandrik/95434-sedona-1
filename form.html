@@ -5,22 +5,29 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
-  <title>Sedona</title>
+  <title>HTML Academy: Sedona</title>
 </head>
 <body>
 <header class="page-header container">
   <div class="page-header__logo"></div>
   <nav class="main-nav main-nav--opened main-nav--closed">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__toggle"><img src="img/icon-cross.svg"></div>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
         <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-        <li class="main-nav__item main-nav__item--active"><a>Форма отзыва</a></li>
+        <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
         <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML academy</a></li>
       </ul>
     </div>
   </nav>
+  <div class="nav"><img src="img/icon-menu.svg"></div>
+  <div class="main-nav_logo-wrapper">
+    <div class="main-nav__logo"><img src="img/logo-sedona-mobile.svg" width="105" height="84" alt="Sedona-logo"></div>
+  </div>
+  <div class="slogan">
+    <div class="slogan__text"><img src="img/text-sedona.svg" width="280" height="280" alt="Sedona-slogan"></div>
+  </div>
 </header>
 <main class="container">
   <div class="intro">
@@ -142,13 +149,13 @@
 <footer class="page-footer container">
   <a class="laib" href="#">#visitsedona</a>
   <div class="social">
-    <div class="social__link social__link--tw"><img src="http://placehold.it/15x10"></div>
-    <div class="social__link social__link--fb"><img src="http://placehold.it/15x10"></div>
-    <div class="social__link social__link--yt"><img src="http://placehold.it/15x10"></div>
+    <div class="social__link social__link--tw"><img src="img/icon-twitter.svg"></div>
+    <div class="social__link social__link--fb"><img src="img/icon-facebook.svg"></div>
+    <div class="social__link social__link--yt"><img src="img/icon-youtube.svg"></div>
   </div>
   <section class="footer-info">
     Разработано
-    <img src="http://placehold.it/15x10">
+    <img src="img/logo-htmlacademy.svg">
   </section>
 </footer>
 </body>
