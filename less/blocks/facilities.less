@@ -1,16 +1,23 @@
 .facilities {
-    position: relative;
+  position: relative;
+  padding-top: 30px;
 }
 
-.facilities__image>img {
-     color: @blue;
-     position: absolute;
-     width: 15%;
-    margin-left: 20px;
-    margin-right: 20px;
+.facilities-wrapper {
+  max-height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
-.facilities__name{
+.facilities__image img {
+  position: absolute;
+  margin-left: 32px;
+  margin-top: -10px;
+}
+
+.facilities__name {
   font-size: 18px;
   font-weight: bold;
   text-align: left;
@@ -18,10 +25,9 @@
   text-transform: uppercase;
   color: @black;
   padding-left: 85px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
-.facilities__text{
+
+.facilities__text {
   font-size: 18px;
   font-weight: normal;
   text-align: left;
@@ -29,44 +35,49 @@
   text-transform: lowercase;
   color: @black;
   padding-left: 85px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-@media @tablet-widths {
-    .facilities__image,
-    .facilities__name,
-    .facilities__text {
-        margin: 0px;
-        padding: 0px;
-        list-style: none;
-    }
-    .facilities {
-        min-height: 332px;
-        min-width: 256px;
-    }
+  padding-top: 10px;
 
-  .facilities-wrapper {
-   display: flex;
-    justify-content: space-between;
 }
-    .facilities__image {
-      margin-left: 100px;
-        margin-top: 55px; 
-        
-    }
-    .facilities__name {
-        padding-top: 110px;
-        text-align: center;
-    }
-    .facilities__text {
-      text-align: center; 
-        padding: 40px 60px 70px 60px;
-    }
+
+@media @tablet-widths {
+  .facilities-wrapper {
+    flex-direction: row-reverse;
+    min-height: 330px;
+    width: auto;
+    .indents();
+  }
+  .facilities {
+    .indents();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .facilities__image img {
+    position: relative;
+    width: 75px;
+    height: 72px;
+    text-align: center;
+    .indents();
+    left: 100px;
+  }
+  .facilities:first-child {
+    order: 1;
+  }
+  .facilities__text {
+    text-align: center;
+    .indents();
+  }
+  .facilities__name {
+    text-align: center;
+    .indents();
+  }
 }
 
 @media @desktop-widths {
   .facilities,
   .info {
     width: 400px;
-}
+  }
 }

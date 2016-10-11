@@ -9,9 +9,8 @@
 </head>
 <body>
 <header class="page-header container">
-  <div class="page-header__logo"></div>
-  <nav class="main-nav main-nav--opened main-nav--closed">
-    <div class="main-nav__toggle"><img src="img/icon-cross.svg"></div>
+  <nav class="main-nav main-nav--opened main-nav--nojs">
+    <button class="main-nav__toggle" type="button"></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
@@ -21,19 +20,20 @@
       </ul>
     </div>
   </nav>
-  <div class="nav"><img src="img/icon-menu.svg"></div>
   <div class="main-nav_logo-wrapper">
     <div class="main-nav__logo"><img src="img/logo-sedona-mobile.svg" width="105" height="84" alt="Sedona-logo"></div>
   </div>
   <div class="slogan">
-      <div class="slogan__text"><img src="img/text-sedona-index.svg" width="280" height="280" alt="Sedona-slogan"></div>
+    <div class="slogan__text"><img src="img/text-sedona-index.svg" width="280" height="280" alt="Sedona-slogan"></div>
   </div>
 </header>
 <main class="container">
+  <div class="container__corner"><img src="img/bg-intro-triangle-mobile.svg" width="325" height="26" alt="Sedona-corner"></div>
   <div class="intro">
     <p class="intro__text">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
     <p class="intro__reasons">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
   </div>
+  <div class="container__corner-down"><img src="img/bg-triangle.svg" width="325" height="37" alt="Sedona-corner-down"></div>
   <div class="content">
     <div class="pictures">
       <div class="pictures__text-wrapper">
@@ -41,25 +41,25 @@
         <div class="pictures__number">-№1-</div>
         <p class="pictures__text">Седона не атракцион для туристов там течет своя жизнь</p>
       </div>
-      <div class="pictures__view"><img src="img/photo-city@1x.jpg"></div>
+      <div class="pictures__view"><img src="img/photo-city@1x.jpg" width="320" height="260" alt="Sedona-city"></div>
     </div>
     <div class="facilities-wrapper">
       <div class="facilities">
-        <div class="facilities__image"><img src="img/icon-house.svg"></div>
+        <div class="facilities__image"><img src="img/icon-house.svg" width="35" height="35" alt="Sedona-house"></div>
         <div class="facilities__name">Жилье</div>
         <div class="facilities__text">
           Рекомендуем пожить в настоящем мотеле, все как в кино!
         </div>
       </div>
       <div class="facilities">
-        <div class="facilities__image"><img src="img/icon-gift.svg"></div>
+        <div class="facilities__image"><img src="img/icon-gift.svg" width="35" height="35" alt="Sedona-gift"></div>
         <div class="facilities__name">Сувениры</div>
         <div class="facilities__text">
           Не только китайского, но и местного производства!
         </div>
       </div>
       <div class="facilities">
-        <div class="facilities__image"><img src="img/icon-burger.svg"></div>
+        <div class="facilities__image"><img src="img/icon-burger.svg"  width="35" height="35" alt="Sedona-burger"></div>
         <div class="facilities__name">Еда</div>
         <div class="facilities__text">
           Всегда заказывайте фирменный бургер, вы не разочаруетесь!
@@ -68,11 +68,11 @@
     </div>
     <div class="pictures left">
       <div class="pictures__text-wrapper">
-        <p class="pictures__title">Там есть мост дьявола</p>
+        <p class="pictures__title-left">Там есть мост дьявола</p>
         <div class="pictures__number">-№2-</div>
         <p class="pictures__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
-      <div class="pictures__view"><img src="img/photo-bridge@1x.jpg"></div>
+      <div class="pictures__view"><img src="img/photo-bridge@1x.jpg"  width="320" height="260" alt="Sedona-bridge"></div>
     </div>
     <div class="info">
       <div class="info__block">
@@ -99,11 +99,13 @@
         <input type="submit" value="Найти гостиницу">
       </div>
     </div>
-    <div class="map"><img src="img/bg-map-mobile@1x.jpg" alt="Map" width="320" height="352"></div>
+    <div class="map"><img src="img/icon-map-marker.svg" alt="Point" width="30" height="30"></div>
   </div>
 </main>
 <footer class="page-footer container">
-  <a class="laib" href="#">#visitsedona</a>
+  <div class="laib">
+  <a href="#">#visitsedona</a>
+    </div>
   <div class="social">
     <div class="social__link social__link--tw"><img src="img/icon-twitter.svg"></div>
     <div class="social__link social__link--fb"><img src="img/icon-facebook.svg"></div>
@@ -111,8 +113,9 @@
   </div>
   <section class="footer-info">
     Разработано
-    <img src="img/logo-htmlacademy.svg">
+    <img src="img/logo-htmlacademy.svg"alt="logo" width="30" height="30">
   </section>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>

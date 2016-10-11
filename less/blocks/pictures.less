@@ -1,63 +1,117 @@
-.pictures__text-wrapper{
+.pictures__text-wrapper {
   background-color: @blue;
+  min-height: 247px;
+  .indents();
+}
+.pictures
+.pictures .left {
+  min-height: 507px;
 }
 
-.pictures__title{
+.pictures__view {
+  .indents();
+  max-height: 260px;
+  width: auto;
+}
+
+.pictures__title {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
   line-height: 24px;
   text-transform: uppercase;
   color: @white;
-  padding: 10px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 23px;
+  padding-top: 55px;
+  margin: 0;
+  vertical-align: middle;
 }
-.pictures__text{
+
+.pictures__title-left {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @white;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 45px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.pictures__text {
   font-size: 18px;
   font-weight: normal;
   text-align: center;
   line-height: 24px;
   text-transform: lowercase;
   color: @white;
-  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 45px;
+  padding-top: 20px;
+  margin: 0;
+  vertical-align: middle;
 }
-.pictures__number{
+
+.pictures__number {
   font-size: 18px;
   font-weight: normal;
   text-align: center;
   line-height: 24px;
   text-transform: lowercase;
   color: @white;
+  vertical-align: middle;
 }
+
 @media @tablet-widths {
   .pictures {
-  /*  .clearfix();*/
-       display: flex;
+    display: flex;
     justify-content: space-between;
+    height: 260px;
+    margin-top: 40px;
   }
-    .left {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-   .pictures .pictures__text-wrapper {
-   /* float: left;*/
-     min-width: 250px;
+
+  .left {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 260px;
+    .indents();
   }
-  .pictures .pictures__view{
-  /* float: right;*/
-    min-width: 510px;
+
+  .pictures__text-wrapper {
+    max-width: 255px;
   }
-  .left .pictures__text-wrapper{
-   /*float: right;*/
+   .pictures__view {
+    flex-grow: 1;
   }
-  .left .pictures__view{
-    /*float: left;*/
+  .pictures__text {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
+  .pictures__title
+  .pictures__title-left {
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+
 }
+
 @media @desktop-widths {
   .pictures__text-wrapper {
-     width: 400px;
+    max-width: 400px;
   }
-  .pictures__view {
-    width: 800px;
+  .pictures__text {
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 20px;
+
   }
 }

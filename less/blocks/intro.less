@@ -1,23 +1,40 @@
-.intro{
- .indent(5px);
-  width: 100%;
+.intro {
+  max-height: 226px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.intro__text{
+
+.intro__text {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  vertical-align: middle;
   line-height: 24px;
   text-transform: uppercase;
   color: @black;
-  padding: 5px;
+
 }
-.intro__reasons{
- font-size: 18px;
+
+.intro__reasons {
+  font-size: 18px;
   font-weight: normal;
   text-align: center;
   line-height: 24px;
   text-transform: lowercase;
   color: @black;
-  padding: 10px;
 }
+
+@media @tablet-widths {
+  .intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+  }
+}
+
+
+
+
 

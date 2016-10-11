@@ -1,10 +1,45 @@
 .foto {
-    margin-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .photo-post {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  .indents();
+  padding-top: 20px;
+  border-top: 1px solid @border;
+  padding-left: 20px;
+  height: 415px;
+  padding-bottom: 20px;
+}
+.photo-post:last-child {
+  border-bottom: 1px solid @border;
+}
+.photo-post__picture {
+  width: 280px;
+  height: 280px;
+  background-color: @grey;
+}
+.photo-post__name {
+  color: @black;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.photo-post__author {
+  color: @black;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+.photo-post__like-voice {
+  color: @black;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: -25px;
 }
 @media @tablet-widths {
     .foto {
@@ -12,24 +47,30 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+      margin-right: 60px;
+      margin-left: 60px;
     }
 
   .photo-post {
       min-width: 324px;
-     
+    .indents();
+    border: none;
+
 }
-   div .photo-post:first-child {
-   min-width: 648px;
+  .photo-post:first-child {
+    width: 84%;
+    max-width: 960px;
+    .indents();
   }
 
 }
 
 @media @desktop-widths {
-  
+
   .photo-post {
     min-width: 400px;
 }
-  div .photo-post:first-child {
+  .photo-post:first-child {
     min-width: 1200px;
   }
 

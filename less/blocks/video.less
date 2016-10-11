@@ -1,11 +1,18 @@
+.video {
+  height: 460px;
+  width: auto;
+  .indents();
+}
+
 .video__question{
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  vertical-align: middle;
   line-height: 24px;
   text-transform: uppercase;
   color: @black;
-  padding: 5px;
+  margin-top: 40px;
 }
 .video__text{
  font-size: 18px;
@@ -15,13 +22,47 @@
   text-transform: lowercase;
   color: @black;
   padding: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.video__border {
+  background-color: @black;
+  width: 280px;
+  height: 45px;
+  margin-left: 20px;
+  display: flex;
+  opacity: 0.5;
+  margin-top: -50px;
+}
+.video__border line {
+  margin-top: -30px;
+}
+.video__border circle {
+  opacity: 1;
+}
+.video__control {
+  background-color: @border;
+  width: 280px;
+  height: 65px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.video__replay {
+  margin-left: 20px;
+  margin-right: 135px;
+}
+.video__fullscreen {
+  margin-left: 30px;
+  margin-right: 20px;
 }
 @media @tablet-widths {
 
   .video__player {
       display: inline-block;
       min-width: 700px;
-     
+
 }
 }
 
