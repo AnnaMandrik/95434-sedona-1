@@ -1,0 +1,21 @@
+.map {
+  background: @grey-map url("../img/bg-map-mobile@1x.jpg")no-repeat center top;
+  min-height: 352px;
+  width: 100%;
+  .indents();
+}
+.map img{
+  margin-top: 160px;
+  margin-left: 145px;
+}
+@media @tablet-widths {
+  .map img{
+    margin-top: 175px;
+    margin-left: 384px;
+  }
+}
+@media @desktop-widths {
+  .map img{
+    margin-left: 600px;
+  }
+}

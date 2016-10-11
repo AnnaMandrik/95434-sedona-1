@@ -1,27 +1,67 @@
-.slogan{
-  background: @blue url("img/bg-back-mobile@1x.jpg") no-repeat 100%;
-    width: 100%;
-    min-height: 392px;
-    .container-fluid ();
-    margin: 0;
-    padding: 0;
-    list-style: none;
-     .container-fluid();
+.slogan {
+  background: @blue url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+  max-height: 390px;
+  .container-fluid ();
+  .indents();
+  margin-top: -30px;
 }
-.slogan__text {
-    text-align: center;
-    padding-top: 92px;
-    padding-bottom: 92px;
 
+.slogan__text {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 55px;
+  padding-bottom: 92px;
 }
+
 @media @tablet-widths {
-   .slogan {
-    min-height: 520px;
+  .slogan {
+    width: auto;
+    .indents();
+    max-height: 520px;
   }
 }
+
 @media @desktop-widths {
 
   .slogan {
-    min-height: 520px;
+    max-width: 100%;
+  }
+}
+
+
+.slogan__photo-page {
+  background: @blue url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+  max-height: 160px;
+  .container-fluid ();
+  .indents();
+  margin-top: -30px;
+}
+.slogan__photo-page
+.slogan__text {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+@media @tablet-widths {
+  .slogan__photo-page {
+    width: auto;
+    .indents();
+    max-height: 290px;
+  }
+}
+
+@media @desktop-widths {
+
+  .slogan__photo-page {
+    max-width: 100%;
+    min-height: 290px;
+  }
+  .slogan__photo-page
+  .slogan__text {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 103px;
+    padding-bottom: 120px;
   }
 }

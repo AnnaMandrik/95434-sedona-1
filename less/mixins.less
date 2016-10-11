@@ -1,17 +1,8 @@
-.indent(@indent) {
-  margin-top: @indent;
-  margin-bottom: @indent;
-  padding-left: @indent;
+.indents() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.clearfix() {
-  &::after {
-    content: "";
-
-    display: table;
-    clear: both;
-  }
-}
-
 .container() {
   width: 320px;
   margin: 0 auto;

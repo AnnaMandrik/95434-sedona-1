@@ -1,23 +1,42 @@
-.date{
+.date {
   background-color: @white;
-  .indent(5px);
-  width: 100%;
+  .indents();
+  .container();
+  height: 288px;
 }
+
 .date__question{
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+  vertical-align: middle;
   line-height: 24px;
   text-transform: uppercase;
   color: @black;
-  padding: 5px;
+
 }
 .date__answer{
  font-size: 18px;
   font-weight: normal;
   text-align: center;
+  vertical-align: middle;
   line-height: 24px;
   text-transform: lowercase;
   color: @black;
   padding: 10px;
+}
+@media @tablet-widths {
+  .date {
+    max-height: 320px;
+    max-width: 450px;
+  }
+  .date__answer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media @desktop-widths {
+  .date {
+    max-height: 338px;
+  }
 }
